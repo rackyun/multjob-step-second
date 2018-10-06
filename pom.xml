@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.rackyun.multjob</groupId>
             <artifactId>multjob-main</artifactId>
-            <version>0.1.7</version>
+            <version>0.1.10</version>
         </dependency>
     </dependencies>
 
