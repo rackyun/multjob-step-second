@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rackyun.multjob</groupId>
     <artifactId>multjob-second</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -38,7 +38,7 @@
         <connection>scm:ssh://git@github.com/rackyun/multjob-step-second.git</connection>
         <url>https://github.com/rackyun/multjob-step-second</url>
         <developerConnection>scm:git:ssh://git@github.com/rackyun/multjob-step-second.git</developerConnection>
-        <tag>multjob-second-0.1.0</tag>
+        <tag>v0.1.0</tag>
     </scm>
 
     <distributionManagement>
