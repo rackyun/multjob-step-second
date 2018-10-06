@@ -16,7 +16,43 @@
         <dependency>
             <groupId>com.rackyun.multjob</groupId>
             <artifactId>multjob-main</artifactId>
-            <version>${mm.version}</version>
+            <version>0.1.7</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <includesList>com.rackyun.multjob:multjob-main</includesList>
+                    <generateBackupPoms>false</generateBackupPoms>
+                    <allowSnapshots>false</allowSnapshots>
+                    <allowMajorUpdates>false</allowMajorUpdates>
+                    <allowMinorUpdates>false</allowMinorUpdates>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <scm>
+        <connection>scm:ssh://git@github.com/rackyun/multjob-step-second.git</connection>
+        <url>https://github.com/rackyun/multjob-step-second</url>
+        <developerConnection>scm:git:ssh://git@github.com/rackyun/multjob-step-second.git</developerConnection>
+        <tag>v0.1.0</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://172.16.1.40:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>172.16.1.40:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
